@@ -4,7 +4,8 @@ def selectionSort(nums):
         
         for j in range(i + 1, len(nums)):
             if nums[j] < nums[i]:
-                (nums[j], nums[i]) = (nums[i], nums[j])
+                min_idx = j
+        (nums[j], nums[i]) = (nums[i], nums[j])
 
     return nums
 
