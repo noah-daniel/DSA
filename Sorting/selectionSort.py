@@ -1,3 +1,4 @@
+#Selection sort is O(n^2) time complexity
 def selectionSort(nums):
     for i in range(len(nums)):
         min_idx = i

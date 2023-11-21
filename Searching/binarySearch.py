@@ -1,5 +1,6 @@
 #Solution formatted for leetcode submission
 
+#Binary search is O(log n) time complexity
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         low = 0

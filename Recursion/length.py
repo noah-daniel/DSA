@@ -1,3 +1,4 @@
+#calculate the length of an array using recursion
 def length(arr):
     if arr == []:
         return 0
