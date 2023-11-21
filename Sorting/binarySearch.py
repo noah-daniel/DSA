@@ -7,6 +7,7 @@ class Solution:
 
         while low <= high:
             mid = (low + high) // 2
+            #if language has a limit of size 2^32 for integers, do mid = low + ((high-low) // 2) instead
             if nums[mid] == target:
                 return mid
             elif nums[mid] < target:
