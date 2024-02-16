@@ -8,7 +8,7 @@ class Solution:
         return self.mergeSortHelper(pairs, 0, len(pairs) - 1)
 
     def mergeSortHelper(self, pairs, s, e):
-        if e - s + 1 <= 1:
+        if e - s <= 0:
             return pairs
         
         m = s + (e-s)//2
@@ -25,7 +25,7 @@ class Solution:
 
         i = 0 # for L
         j = 0 # for R
-        k = 0 # for arr index
+        k = s # for arr index
 
         while i < len(L) and j < len(R):
             if L[i].key <= R[j].key:
