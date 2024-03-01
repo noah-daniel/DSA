@@ -9,8 +9,8 @@ class Solution:
 
             if x != y:
                 heapq.heappush(stones, y-x)
-
-        stones.append(0)
+        if not stones:
+            stones.append(0)
         return (abs(stones[0]))
 
 
